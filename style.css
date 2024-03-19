@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+body{
+    background-color: lightgray;
+    counter-reset: count1 0;
+}
+
+.container{
+    height: 580px;
+    width: 320px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 50px;
+    position: relative;
+}
+.page-animate{
+    animation: page 0.5s linear;
+}
+@keyframes page {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+/* page 1  start */
+
+.page1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+.page1-text1,.page1-text2{
+    margin: 0px 20px;
+}.page1-text1 p,.page1-text2 p{
+    line-height: 25px;
+}.page1-text1 h3,.page1-text2 h3{
+    margin: 20px 0px;
+}
+
+/* page end */
+
+.nxt-btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 15px 30px;
+    border-radius: 55px 0px 50px 0px;
+    border: none;
+    outline: none;
+    background-color: crimson;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.nxt-btn:hover{
+    background-color: aqua;
+}
+
+/* page 2 start */
+
+.page2{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page2 h3{
+    text-align: center;
+    padding: 12px 0px;
+}
+.page2 ul{
+    width: 88%;
+    margin: 0px auto;
+}
+.page2 ul li{
+    list-style: decimal;
+    width: 85%;
+    padding: 15px 25px;
+    line-height: 30px;
+    margin-left: 20px;
+}
+.page2 ul li span{
+    color: rgb(99, 99, 209);
+}
+hr{
+    opacity: 0.5;
+    width: 100%;
+}
+
+.exit-btn{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px 30px;
+    border-radius: 0px 55px 0px 50px;
+    border: none;
+    outline: none;
+    background-color: crimson;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: none;
+}
+.exit-btn:hover{
+    background-color: rgb(122, 50, 65);
+}
+
+/* page 3 start */
+
+.page3{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.head{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}.head h3{
+    margin-left: 30px;
+    font-size: 15px;
+}.time-nmbr{
+    display: flex;
+    width: 110px;
+    height: 25px;
+    border-radius: 6px;
+    border: 1px solid #9dccff;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+    background-color: #cce5ff;
+}.time-nmbr h4{
+    font-size: 15px;
+    font-weight: 100;
+    color: #3a5d81;
+    margin-left: 3px;
+}.digital-time{
+    background-color: black;
+    height: 115%;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 6px;
+    color: white;
+}.time-line{
+    width: 0px;
+    height: 3px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+}
+.question-page{
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 30px;
+    position: absolute;
+    top: 80px;
+}.add-que{
+    line-height: 40px;
+}.options{
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+    position: absolute;
+}.options p{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    padding-left: 10px;
+    margin: 10px 0px;
+    border: 1px solid #84c5fe;
+    background-color: #f0f8ff;
+    border-radius: 6px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+}.options p span{
+    position: absolute;
+    right: 10px;
+    font-weight: 600;
+    color: white;
+}
+.options p:hover{
+    background-color: #84c5fe;
+    transition: all 0.3s;
+    transform: scale(1.05);
+}
+.hover-out{
+    transition: all 0.3s;
+}
+.scale{
+    transform: scale(1.05);
+}
+.disable-btn{
+    pointer-events: none;
+}
+.page-count{
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+}
+.page3 hr{
+    bottom: 52px;
+    position: absolute;
+}
+
+/* result page */
+.result-page{
+    height: 100%;
+    width: 100%;
+    background-color: #84c5fe;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
